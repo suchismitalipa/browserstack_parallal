@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel]" parallel="tests">
+  <parameter name="deviceIndex" value="1"/>
+  <test name="ParallelTestPixel3">
+    <parameter name="deviceIndex" value="0"/>
+    <classes>
+      <class name="TestNG_Parallel.run_parallal_test"/>
+    </classes>
+  </test> <!-- ParallelTestPixel3 -->
+  <test name="ParallelTestGalaxy10e">
+    <parameter name="deviceIndex" value="1"/>
+    <classes>
+      <class name="TestNG_Parallel.run_parallal_test"/>
+    </classes>
+  </test> <!-- ParallelTestGalaxy10e -->
+</suite> <!-- Failed suite [Parallel] -->
